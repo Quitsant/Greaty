@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+:root {
+    --warna-utama : rgb(112, 36, 242);
+    --warna-kedua : rgb(255, 255, 255);
+    --warna-texthover1 : rgb(186, 186, 186);
+    --warna-text1 : black;
+    --warna-text2 : white;
+}
+
+body {
+    background-color: var(--warnaBG);
+    text-decoration: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE dan Edge lama */
+    font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
+}
+h1, h2, h3, p, a, div, span {
+    color: black;
+}
+
+/* end dari system css */
+
+/* awalan untuk nav */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--warna-utama);
+    z-index: 100;
+    border-bottom:1px solid black;
+    padding: 0 2rem;
+    height: 4rem;
+    max-height: 4rem;
+    width: 100%;
+    
+}
+
+.navbar-brand a{
+    color: aliceblue;
+    font-weight: 800;
+    font-size: 1.4rem;
+    cursor: default;
+}
+
+nav .navbar-menu {
+    text-decoration: none;
+    display: flex;
+    padding: 0 120px;
+    width: fit-content;
+}
+.navbar-menu p {
+    padding: 0 50px;
+}
+
+.navbar-menu p a {
+    color: var(--warna-texthover1);
+    font-weight: 800;
+}
+
+.navbar-menu p .Home {
+    color: var(--warna-text2);
+}
+
+.navbar-menu p a:hover{
+    color: var(--warna-text2);
+    border-bottom: 3px solid var(--warna-text2);
+}
+
+nav .search {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.account img {
+    width: 45px;
+}
+
+.account p {
+    padding-right: 18px;
+    font-weight: 800;
+    color: var(--warna-text2);
+}
+/* akhiran untuk nav/
+
+/* awalan untuk body */
+/* akhiran untuk nav */
+
+/* Main Content */
+.main {
+
+    display: flex;
+    width: 100%;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main .main__content {
+    padding-top: 12rem;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12rem;
+    width: 800px;
+    background-color: #b4b4b4;
+}
+
+.main .main__content  img {
+    max-width: 450px;
+    width: 500px;
+    z-index: 4;
+}
+
+.main .main__content p {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.2em;
+    background: #c9c9c9;
+    padding: 10px;
+    border-radius: 8px;
+    height: 400px;
+    font-weight: 600;
+}
+
+.action-bar {
+    margin-top: 5px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    height: fit-content;
+}
+
+.action-bar button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #eee;
+    font-size: 1em;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+.action-bar button:hover {
+    background-color: #ddd;
+}
+
+
+.separator {
+    border: none;
+    border-bottom: 4px solid #ddd;
+    width: 100%;
+}
