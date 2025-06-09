@@ -76,10 +76,6 @@ nav .navbar-menu {
     border-bottom: 3px solid var(--warna-text2);
 }
 
-nav .search {
-    display: flex;
-    align-items: center;
-}
 
 .account {
     display: flex;
@@ -170,4 +166,79 @@ nav .search {
     border: none;
     border-bottom: 4px solid #ddd;
     width: 100%;
+}
+
+/* 📱 Untuk layar Mobile */
+/* ===================== */
+@media (max-width: 800px) {
+    nav {
+        justify-content: center;
+    }
+
+    .navbar-brand a {
+        font-size: medium;
+    }
+
+    .navbar-menu {
+        margin: 0 -110px;
+        margin-right: -104px;
+    }
+
+    .navbar-menu p {
+        font-size: 12px;
+        margin: 1px;
+    }
+
+    .main .main__content {
+        padding-top: 8rem;
+        width: 90%;
+        gap: 8rem;
+    }
+
+    .main .main__content img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .main .main__content p {
+        font-size: 1em;
+        height: auto;
+        padding: 12px;
+        max-width: 300px;
+    }
+
+    .account p {
+        display: none;
+    }
+
+    .action-bar {
+        align-items: center;
+
+    }
+}
+
+/* ====================== */
+/* 💻 Untuk layar Tablet  */
+/* ====================== */
+@media (max-width: 1024px) {
+    .navbar-menu {
+        padding: 0 20px;
+    }
+
+    .navbar-menu p {
+        padding: 0 20px;
+    }
+
+    .main .main__content {
+        width: 95%;
+        gap: 6rem;
+    }
+
+    .main .main__content img {
+        width: 90%;
+    }
+
+    .main .main__content p {
+        font-size: 1.1em;
+    }
 }
